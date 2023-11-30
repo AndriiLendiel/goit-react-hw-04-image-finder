@@ -5,22 +5,23 @@ import React from 'react';
 
 export const Modal = ({item, onClose}) =>  {
   
-    const handleKeydown = (e) => {
-        if(e.code === 'Escape') {
-    onClose();
-        }
-    }
+
     
     const handleClickBackdrop = (e) => {
     e.target === e.currentTarget && onClose();
         
     }
     useEffect(() => {
+        const handleKeydown = (e) => {
+            if(e.code === 'Escape') {
+        onClose();
+            }
+        }
         window.addEventListener('keydown', handleKeydown)
         return () => {
             window.removeEventListener('keydown', handleKeydown)
         };
-    }, [handleKeydown])
+    }, [onClose])
 
 
 
