@@ -1,4 +1,4 @@
-import { Component, useEffect } from 'react';
+import { useEffect } from 'react';
 import s from './Modale.module.css'
 import React from 'react';
 

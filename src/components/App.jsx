@@ -1,5 +1,5 @@
 import React from "react";
-import { useState,useEffect, useRef } from "react";
+import { useState,useEffect } from "react";
 import { SearchBar } from "./Searchbar/Searchbar";
 import * as API from '../service/api.js'
 import { ImageGallery } from "./ImageGallery/ImageGallery";
@@ -21,7 +21,7 @@ const [page, setPage] = useState(1)
 const [isLoading, setIsLoading] = useState(false)
 const [error, setError] = useState(false)
 const [totalHits, setTotalHits] = useState(null)
-const [name, setName] = useState('')
+
 
 
 const inputSearch = (name) => {

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Component } from "react";
+
 import s from './SearchBar.module.css'
 
 export const  SearchBar = ({onSubmit}) => {
